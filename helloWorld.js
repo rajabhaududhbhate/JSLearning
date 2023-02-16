@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-console.log("Raju D Dudhbhate ");
-=======
 console.log("Raju Dudhbhate");
 console.log(31)
 
@@ -19,4 +16,3 @@ var age = "31";  // Variable declaration and initialization in the same line
 age = 32;
 age = 33;
 console.log(age);
->>>>>>> Stashed changes
