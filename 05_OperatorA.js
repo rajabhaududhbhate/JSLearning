@@ -17,6 +17,7 @@ function angularD(){
     var angu = "I am Angular Developer";
     return angu;
 }
+ 
 var angularDev = angularD();
 var strLength = angularDev.length;
 console.log(`The give string is "I am Angular Developer" and its lenght is: ${angularDev.length}`);
@@ -25,3 +26,12 @@ var strDivision = strLength / strWord.length;
 var strMultiplication = strLength * strWord.length;
 console.log(`The Result of string lenght divide by total number words is : ${strDivision}`);
 console.log(`The Result of string lenght multiplication by total number words is : ${strMultiplication}`);
+
+
+
+function angularD(){
+    var angu = "I am Angular Developer";
+   console.log(angu);
+}
+squareOfWordLenght();
+
