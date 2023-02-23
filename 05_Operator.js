@@ -55,3 +55,45 @@ var marks = 35; //greater than equal
 console.log(marks <= 35); // 
 
 // Is marks greater than equal 35
+
+
+var marks = 70;
+var result = marks >=60 ? "Allow him for Interview" : "Don't Allow"
+console.log(result);
+
+var age = 22;
+
+var res = age>= 21 ? true : false;
+console.log(res);
+
+console.log("**********************");
+
+console.log("Even or Odd");
+var myNumber = 7;
+//Even - divide by 2 and reminder is 0
+result = myNumber%2 == 0 ? "Even" : "Odd";
+console.log(result);
+
+
+var num1 = 10;
+var num2 = 12;
+var result = num1 >= num2 ? num1 : num2;
+console.log(result);
+
+
+function wordLength(word){
+    var wordLength = word.length;
+    var result = wordLength%2==0 ? "EVEN" : "ODD";
+    return result;
+ }
+ var result = wordLength("JavaScript");
+ console.log(`Word "JavaScript" has ${result} length` );
+ // var result = wordLength("Google");
+ console.log(`Word "Google" has ${wordLength("Google Chrome")} length` );
+ console.log("**********************");
+ function maleMarriageEligibility(gender, age, boyName){
+    var result = (gender=="Male" && age>=21) ? `Hey ${boyName} you are eligible for marriage` : " No Try next time" ;
+    return result;
+ }
+  var result = maleMarriageEligibility("Male", 25, "Billgates");
+  console.log(result);
