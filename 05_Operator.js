@@ -97,3 +97,11 @@ function wordLength(word){
  }
   var result = maleMarriageEligibility("Male", 25, "Billgates");
   console.log(result);
+
+
+  console.log("difference bet == and ===");
+  // string number and boolean
+  var num1 = 10; 
+  var num2 = "32";
+  console.log( num1 == num2); // 10 == "10"
+  console.log( num1 == num2); // 10 === "10"
