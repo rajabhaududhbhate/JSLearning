@@ -65,6 +65,10 @@ var result = checkEventOdd(45);
 
 console.log("End of if else block");
 
+
+
+
+
  function maleMarriageEligibility(gender, age, boyName){
     if(gender == "Male" && age>=21){
         console.log(`Hey ${boyName} you are eligible for marraige`);
