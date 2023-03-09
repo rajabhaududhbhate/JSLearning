@@ -71,7 +71,7 @@ show: function(){
 //     console.table(student2);
 // console.log(student2.friends[student2.friends.length-1]);
 
-student.show();
+student2.show();
 
 
 

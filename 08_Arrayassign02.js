@@ -17,10 +17,12 @@ while(index < arrayNumbers.length){
     const element = arrayNumbers[index]
     if(element%2==0){
         console.log( [element]);
-        console.log();
+       evenelementOfarray.push(element);
         
+        console.log(arrayNumbers);
     }
     index++;
+    
 }
 
 
