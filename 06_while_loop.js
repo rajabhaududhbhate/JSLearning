@@ -19,3 +19,6 @@ while (index2<arrayOfNumbers.length) { // condition
     }
     index2++; // Update Expression
 }
+
+
+

@@ -113,6 +113,17 @@ console.log(arrayOfNumber);
 
 
 
+console.log(`============= Traversing ===============`);
+
+var arrayOfNumber = [10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26];
+
+for (let index = 0; index < arrayOfNumber.length; index++) {
+    const element = arrayOfNumber[index];
+    console.log(element);
+    
+}
+// arrayOfNumber[index];
+
 
 
 
