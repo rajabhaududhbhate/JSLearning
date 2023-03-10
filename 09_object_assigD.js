@@ -34,9 +34,9 @@ professor.totalExperience = "14 Years"
 console.table(professor.totalExperience);
 console.log(`========= Modify any existing property   ===========`);
 professor.certificates.push("Oracle Certified");
-console.log(professor.certificates);
+console.table(professor.certificates);
 console.log(`=========Log the last element of the array certificates.   ===========`);
 console.log(professor.certificates[professor.certificates.length-1]);
 
-console.log(`=========Final Object in table   ===========`);
-console.table(professor);
+// console.log(`=========Final Object in table   ===========`);
+// console.table(professor);
