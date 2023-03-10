@@ -1,10 +1,6 @@
 class Bank {
 
-    bankName
-    location
-    account
-    ifsc
-    interestRate
+
     constructor(bankName, location, account, ifsc, interestRate){
 
         this.bankName = bankName;

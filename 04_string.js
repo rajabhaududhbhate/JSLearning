@@ -22,7 +22,6 @@ console.log("Index of char which is not available into the string: ", greet.inde
 
 console.log("Index of o char", greet.indexOf('o'));
 
-
 console.log("Index of o char using lastIndexOf(): ", greet.lastIndexOf('o'));
 
 var replaceResult = greet.replace("Morning", "Evening");
@@ -59,7 +58,10 @@ console.log("Is substring Mor includes in the greet or not:", greet.includes("Mo
 console.log("Is substring Afternoon includes in the greet or not:", greet.includes("Afternoon"));
 console.log("Is substring o includes in the greet or not:", greet.includes("o"));
 
+
 console.log("slice() method");
+
+
 var sliceResult = greet.slice(5, 12);
 console.log(sliceResult);
 console.log(greet.slice(2, 5));

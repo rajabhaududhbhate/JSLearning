@@ -31,7 +31,7 @@ let yesBank = {
 
     show: function(){
 
-       console.log(`Name: ${this.bankName}, Location ${this.location}`);
+       console.log(`Name: ${this.bankName}, Location ${this.location}, Account No ${this.accountNo}, IFSC Code ${this.ifsc}, ${this.interestRate}`);
     }
 
 }
@@ -41,13 +41,13 @@ let yesBank = {
 // console.log(hdfcBank);
 // console.log(yesBank);
 
-// yesBank.show();
+yesBank.show();
 
 
 
-const arrayOfBanks = [sbiBank, axisBank, hdfcBank, yesBank ];
-for (let index = 0; index < arrayOfBanks.length; index++) {
-    const element = arrayOfBanks[0];
-    console.log(element);
+// const arrayOfBanks = [sbiBank, axisBank, hdfcBank, yesBank ];
+// for (let index = 0; index < arrayOfBanks.length; index++) {
+//     const element = arrayOfBanks[0];
+//     console.log(element);
     
-}
+// }
