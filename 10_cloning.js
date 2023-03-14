@@ -58,11 +58,6 @@ newBank.bankAddress.PIN = 999999;
 console.log(`bank==> ${bank.bankAddress.PIN}`);// 
 console.log(`newBank==> ${newBank.bankAddress.PIN}`);// 
 
-
-
-
-
-
 const arrayOfNumber = [4, 5, 6, 7, 8, 3];
 const newArray = arrayOfNumber; // Shallow Clone
 newArray.push(100);
@@ -70,13 +65,13 @@ newArray.push(100);
 console.log(arrayOfNumber);
 console.log(newArray);
 
-
 const array = [5, 6, 3, 2, 1];
 const cloneArray = [...array];
 const evenArray = [2, 4, 6, 8]
 console.log("Merging array");
 const mergeArray = array + evenArray;
 console.log(mergeArray);
+
 console.log(typeof mergeArray);
 
 // Concat() method
@@ -84,16 +79,8 @@ const concat = array.concat(evenArray);
 console.log(concat);
 console.log(typeof concat);
 
-
 // Spread Operator
 
 const resultArray = [...array, ...evenArray]
 console.log(resultArray);
 console.log(typeof resultArray);
-
-
-
-
-
-
-
