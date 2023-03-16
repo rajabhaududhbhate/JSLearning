@@ -72,12 +72,14 @@ mapOfBank.set("Kotak", kotakBank);
 mapOfBank.set("Panjab", panjabBank);
 
 
+
 const keysOfMap = mapOfBank.keys();
 
 for (const key of keysOfMap ) {
     const element =  mapOfBank.get(key);
     const accresutl = element.accountNo;
-    console.log("Account No", accresutl, "is value of", key,"Bank Account No.");
+    const bnkName = element.bankName;
+    console.log("Account No", accresutl, "is value of", bnkName, "Account No.");
 
    // console.log(element.bankName, element.accountNo, element.interestRate);
     

@@ -13,8 +13,6 @@ let bankLocation = {
     pinCode: "411502"
 }
 
-
-
 // let rateOfInterest = {
 //     homeLoanInterest, personalLoanInterest, dueInterest
 // }
@@ -51,15 +49,15 @@ let rateofInterest = {
 
 }
 
-
+  console.log(` merge object by using loop`)
 const mergedObject = Object.assign(newbankSbi, bankLocation, rateofInterest );
 console.table(mergedObject);
 
-const arrayOfBaNK = [mergedObject]
+const arrayOfBaNK = mergedObject
 
-for (const element of arrayOfBaNK) {
+for (const element in mergedObject) {
 
-    console.log(` merger object result by using loop`)
+  
    // console.log(`SBI Bank Details: ${element.bankName}, ${element.accountName}, ${element.accountNo}, ${element.ifscCode}`)
    console.table(element);
     
