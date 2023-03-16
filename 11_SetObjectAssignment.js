@@ -37,6 +37,6 @@ setOfBanks.add(hdfck_bank);
 setOfBanks.add(panjab_bank);
 
 for (const element of setOfBanks) {
-    console.log(`Bank Namke is ${element.bankName}, and Bank address is: ${element.location}`);
+    console.log(`Bank Name is ${element.bankName}, and Bank address is: ${element.location}`);
     
 }
