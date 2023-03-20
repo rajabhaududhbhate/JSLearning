@@ -18,3 +18,5 @@ function swapVariables(value1, value2, value3) // value1 = num1, value2 = num2
 var swapResult = swapVariables(num1, num2);// Function call or Function invoke
 console.log(swapResult);
 swapVariables(str1, str2);// Function call or Function invoke
+
+

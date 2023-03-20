@@ -10,3 +10,6 @@ var sum = function(arg1, arg2){
 }
 var result = sum(100, 100);
 console.log(result);
+
+
+
