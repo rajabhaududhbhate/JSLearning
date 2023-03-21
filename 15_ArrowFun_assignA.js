@@ -27,3 +27,14 @@ let addition = (arg1, arg2, arg3, arg4, arg5) => {
 addition(100, 100, 200, 349, 756);
 console.log('========== Invoke the same function =================');
 addition("I am", " learning", " ES6", " features", " in depth");
+
+
+
+
+let display = (num1) => {
+    const result = num1*num1
+    console.log(result);
+}
+display(10);
+
+
