@@ -37,19 +37,8 @@ let tctemparray = [];
 
 let wiproEmp = arrayOfEmployees.filter(element =>{
     return element.emp_company == "Wipro"
+}).reduce((runneingTotal, value)=>{
+    runneingTotal + value
 })
 console.log(wiproEmp);
 
-
-
-let totalsalary = 0;
-
-wiproEmp.forEach(elment =>{
-    totalsalary = totalsalary + elment.emp_salary
-
-})
-console.log(`Total Salary of wipro is : ${totalsalary}`);
-
-const averagesalOfWipro = totalsalary / wiproEmp.length;
-
-console.log(`Average Salary of Wipro is ${averagesalOfWipro}`);
