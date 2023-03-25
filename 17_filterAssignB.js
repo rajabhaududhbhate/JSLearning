@@ -35,10 +35,31 @@ let tctemparray = [];
 
  console.log(`=============================== Average Salary of Wipro  ==================================`); 
 
-let wiproEmp = arrayOfEmployees.filter(element =>{
-    return element.emp_company == "Wipro"
-}).reduce((runneingTotal, value)=>{
-    runneingTotal + value
-})
-console.log(wiproEmp);
+let wiprosalary = arrayOfEmployees.filter(element =>element.emp_company == "Wipro"
+).map(element => element.emp_salary).reduce((runningTotal, value) => runningTotal + value);
+console.log("Total Salary of Wipro is:",  wiprosalary);
 
+let numEmployees = arrayOfEmployees.filter(element =>
+    element.emp_company == "Wipro"
+).length
+console.log("Number of Wipro Employees are:", numEmployees);
+
+averageSalary = wiprosalary / numEmployees;
+console.log("Average Salary of Wipro is:", averageSalary);
+
+console.log(`=============================== Average Salary of Wipro & Infy ==================================`); 
+
+
+let wiproInfySal = arrayOfEmployees.filter(element =>
+    element.emp_company == "Wipro" || element.emp_company == "Infy"
+).map(empdetails => empdetails.emp_salary)
+.reduce((runningTotal, value)=>runningTotal + value);
+console.log("Total Salary of Wipro is:", wiproInfySal)
+
+let wiproInfyEmp = arrayOfEmployees.filter(element =>
+    element.emp_company == "Wipro" || element.emp_company == "Infy"
+).length
+
+console.log("Number of Wipro & Infy Employees are:",wiproInfyEmp);
+const avgsal = wiproInfySal/ wiproInfyEmp
+console.log("Average Salary of Wipro & Infy is:",avgsal);
