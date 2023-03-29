@@ -6,6 +6,12 @@
 const heading2 = document.getElementById("heading2");
 heading2.style.color = "red";
 
+
+
 const ullist = document.getElementById("ullist");
 const childNum = document.getElementById("chilNode");
-ullist.removeChild(childNum);
+const classum = document.getElementsByClassName("liItem");
+ullist.removeChild(classum[1]);
+
+
+
