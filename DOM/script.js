@@ -52,3 +52,50 @@ const elementProject = document.querySelector("#project");
 elementDivProject.removeChild(elementProject);
 
 
+console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+
+// document.body.appendChild();
+
+const elementAddress = document.querySelector("#address");
+elementAddress.addEventListener("click", ()=>{
+    console.log("Listing Click Event...");
+    alert("You have clicked on address");
+    const inputValue = prompt("Title is title", "Default value");
+    console.log(inputValue);
+});
+
+
+elementAddress.addEventListener("mouseover", ()=>{
+    console.log("Mouse Over");
+    elementAddress.style.color = "red";
+});
+
+function show(){
+    console.log(
+        "Click Event..........."
+    );
+};
+
+const isEventButton = document.querySelector("#isEvenButton");
+isEventButton.addEventListener('click', ()=>{
+    //console.log("button clicled");
+    const inputvalue = prompt("Please Enter Number to check..", 0);
+    console.log(inputvalue);
+    const result = inputvalue % 2 == 0 ? true : false;
+    if(result){
+        alert("Given number is Even");
+    }else{
+        alert("Given number is Odd");
+    }
+
+   
+});
+
+
+
