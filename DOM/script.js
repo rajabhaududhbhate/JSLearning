@@ -82,20 +82,27 @@ function show(){
     );
 };
 
-const isEventButton = document.querySelector("#isEvenButton");
-isEventButton.addEventListener('click', ()=>{
-    //console.log("button clicled");
-    const inputvalue = prompt("Please Enter Number to check..", 0);
-    console.log(inputvalue);
-    const result = inputvalue % 2 == 0 ? true : false;
-    if(result){
-        alert("Given number is Even");
+const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) {
+        alert("Invalid value");
     }else{
-        alert("Given number is Odd");
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
     }
+} );
 
-   
+
+const confirmElement = document.querySelector("#confirm");
+confirmElement.addEventListener('click',  () => {
+   const result = confirm("Are you sure ?");
+   console.log(result);
 });
-
 
 
